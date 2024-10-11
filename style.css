@@ -1,0 +1,58 @@
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+  }
+
+body {
+    background-color: #F8EDE3;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.green_colour {
+  color: rgb(137,138,120);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  height: 300px; /* Set a height for the container */
+  filter: blur(0.5px);
+}
+
+.font_small {
+  font-size: 1rem;
+}
+.centered-image {
+  max-width: 100%; /* Make the image responsive */
+  max-height: 100%; /* Ensure the image stays within the div */
+}
+
+
+.bg-engineers {
+  position: relative;
+  background-image: url('./images/therapy_background.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.bg-engineers::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(137,138,120, 0.8); /* Green with 50% opacity */
+  filter: blur(1.5px);
+  z-index: 1;
+}
+
+.bg-engineers > * {
+  position: relative;
+  z-index: 2;
+}
